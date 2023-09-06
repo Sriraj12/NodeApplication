@@ -24,8 +24,8 @@ app.get('/userdetails', (req, res) => {
 })
 
 app.post('/login', (req, res) => {
-
   const loginUser = users.find((user) => user.username === req.body.username);
+  console.log("logion");
   let jwtSecretKey = '046ee949a348b0b3c84826d91383aa7d99d891cf919cbe583346ec8803ab4ed4df35a6f37023349aa19a2fc9ec50d9d14cdda3474fb565de46f515121439d907';
   if (!loginUser) {
     res.status(401).send({ message: "Invalid User" })
@@ -33,7 +33,7 @@ app.post('/login', (req, res) => {
     res.status(401).send({ message: "Invalid Password" })
   } else {
     const token = jwt.sign(loginUser, jwtSecretKey);
-    res.status(200).send({ token: token })
+    res.status(200).send({ token: token, loggedInUser: loginUser })
   }
 });
 
@@ -54,6 +54,14 @@ function authenticateToken(req, res, next) {
   })
 
 }
+
+app.post('/userDetails', (req,res)=>{
+  const userDetails = users.find((user) => user.id === Number(req.body.userId))
+  console.log("userDetails",userDetails);
+  if(userDetails) {
+    res.status(200).send({ user: userDetails})
+  }
+})
 
 app.listen(8000, () => {
   console.log(`Server listening on 8000`);

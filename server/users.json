@@ -3,48 +3,56 @@
     "username": "abilash",
     "password": "123456",
     "role": "Super Admin",
-    "place": "Tirunelveli"
+    "place": "Tirunelveli",
+    "id": 1
 },{
-    "name": "User",
+    "name": "Adam",
     "username": "abc",
     "password": "123",
     "role": "Super Admin",
-    "place": "Chennai"
+    "place": "Chennai",
+    "id": 2
 },{
     "name": "Dillshad",
     "username": "dillshad",
     "password": "123456",
     "role": "Admin",
-    "place": "PalayamKottai"
+    "place": "PalayamKottai",
+    "id": 3
 },{
     "name": "PKP",
     "username": "PKP",
     "password": "123456",
     "role": "Employee",
-    "place": "Coimbatore"
+    "place": "Coimbatore",
+    "id": 4
 },{
     "name": "Ajay",
     "username": "ajay",
     "password": "123456",
     "role": "Employee",
-    "place": "Trichy"
+    "place": "Trichy",
+    "id": 5
 },{
     "name": "User",
     "username": "123456",
     "password": "123456",
     "role": "Employee",
-    "place": "Chennai"
+    "place": "Chennai",
+    "id": 6
 },{
     "name": "Potter",
     "username": "potter",
     "password": "123456",
     "role": "Employee",
-    "place": "Tirunelveli"
+    "place": "Tirunelveli",
+    "id": 7
 },{
     "name": "Prakash",
     "username": "prakash",
     "password": "123456",
     "role": "Employee",
-    "place": "Erode"
+    "place": "Erode",
+    "id": 8
 }
 ]
